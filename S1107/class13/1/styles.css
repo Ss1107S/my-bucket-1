@@ -1,0 +1,40 @@
+.wrapper {
+	background-color: #fff;
+    color: #444;
+	display: grid;
+ 	gap: 20px;
+	grid-template-columns: repeat(2, 225px);
+ 	grid-template-rows: 1fr 3fr 1fr;
+  	grid-template-areas:
+	". header "
+	"sidebar  content"
+	"footer  footer";
+}
+
+.box {
+	background-color: #444;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 150%;
+}
+
+.header,.footer {
+	background-color: #999;
+}
+
+.header{
+	grid-area: 1/2;
+}
+
+.sidebar{
+	grid-area: 2/1;
+}
+
+.content{
+	grid-area: 2/2;
+}
+
+.footer{
+	grid-area: 3;
+}
